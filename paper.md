@@ -8,10 +8,10 @@ tags:
   - Monte-Carlo
   - R package
 output:
-  pdf_document: default
-  word_document: default
   html_document:
     df_print: paged
+  word_document: default
+  pdf_document: default
   rmarkdown::pdf_document:
     fig_caption: yes        
     includes:  
@@ -105,7 +105,9 @@ Simulation, Data cubes, Biodiversity, B-Cubed, Monte-Carlo, R package
 ...
 
 # Introduction
-Simulation studies offer numerous benefits due to their ability to mimic real-world scenarios in controlled and customizable environments. Ecosystems and biodiversity data are very complex and involve a multitude of interacting factors. Simulations allow researchers to model and to understand the effects of the complexity of ecological systems by varying parameters such as spatial and/or temporal clustering, species prevalence, etc.
+Simulation studies offer numerous benefits due to their ability to mimic real-world scenarios in controlled and customizable environments. Ecosystems and biodiversity data are very complex and involve a multitude of interacting factors. Some of those factors belongs to the biological process, such as responses to the environmental gradient and environmental change, while other factors belongs to the sampling process, such as sampling effort and bias, positional uncertainty of observations and species detectability. Simulations allow researchers to model and to understand the effects of the complexity of ecological systems [@zurell_virtual_2010] by creating a controlled environment where the effects of biological and sampling processes can be disentangled. 
+
+There are softwares available for simulation of ecological communities [e.g. @may_mobsim_2018; @sokol_linking_2015], and species distribution [@virtual_species_2015]. However, we lack tools to simulate species distribution that combines the species distribution with biodiversity data cubes in both space and time. 
 
 During the B-Cubed Hackathon (Hacking Biodiversity Data Cubes for Policy), we aimed to create a practical simulation framework for biodiversity data cubes based on Monte Carlo methods (= based on repeated random sampling). This framework is composed of three steps ([Fig. 1](#Figure_1)):
 
